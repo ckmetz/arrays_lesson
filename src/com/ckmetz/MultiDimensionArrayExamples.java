@@ -9,7 +9,10 @@ public class MultiDimensionArrayExamples {
         // Set size array init
         String[][] setSizeArray = new String[10][10];
         // Init with data
-        String [][] doubleMessage = {{"hello",  "world"}, {"goodbye", "world"}};
+        String [][] doubleMessage = {
+                {"hello",  "world"},
+                {"goodbye", "world"}
+        };
         // Replacing "world with "Cleveland" in first nested array
         doubleMessage[0][1] = "Cleveland";
         // Setting hello to the value "hello" from the array

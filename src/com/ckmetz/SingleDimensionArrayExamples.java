@@ -18,6 +18,24 @@ public class SingleDimensionArrayExamples {
 
     }
 
+    public void arrayManipulation() {
+        int[] sortedArray = this.scores;
+        // sort is an in place function,
+        // it sorts sortedArray but doesn't return anything
+        // (also known as destructive function)
+        Arrays.sort(sortedArray);
+
+        // Getting the length of this.scores
+        int length = this.scores.length;
+
+        // Will return the scores {55, 32, 79, 82}
+        int [] subArrayScores = Arrays.copyOfRange(
+                this.scores,
+                1,
+                4
+        );
+    }
+
     public void forLoop() {
         // Iterate over each value in the array
         for(int i = 0; i < this.scores.length; i++) {
